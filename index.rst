@@ -42,6 +42,10 @@ Docs-as-Data (DaD)
   site link to each other and to the outside web more broadly. If a lot of my docs pages link to
   some particular page, then that page is probably important. PageRank Lite, basically, except
   with much more focus on intra-site backlinks.
+* :ref:`embeddings`. Machine learning (ML) has the potential to
+  advance the state of the art in technical writing. No, I'm not talking
+  about Claude Opus, Gemini Pro, LLaMa, etc. The ML technology that might end up
+  having the biggest impact on technical writing is **embeddings**.
 
 .. _ml:
 
@@ -49,6 +53,8 @@ Docs-as-Data (DaD)
 Machine learning
 ----------------
 
+* :ref:`genai-outlook-2023`. My initial thoughts on how GenAI might affect
+  technical writing.
 * :ref:`stateful-assistants`. GenAI chatbot assistants might be very useful if
   they can serve as companions for the entire journey that readers take when
   visiting my docs sites.
@@ -64,8 +70,10 @@ Machine learning
   models.
 * :ref:`style-guide-fine-tuning`. How and why one might fine-tune a generative
   model into a style guide editor.
-* :ref:`genai-outlook-2023`. My initial thoughts on how GenAI might affect
-  technical writing.
+* :ref:`embeddings`. Machine learning (ML) has the potential to greatly
+  advance the state of the art in technical writing. No, I'm not talking
+  about Claude Opus, Gemini Pro, LLaMa, etc. The ML technology that might end up
+  having the biggest impact on technical writing is **embeddings**.
 
 .. _seo:
 
@@ -107,6 +115,7 @@ User experience
 
    a11y/skip
    build/bazel
+   data/embeddings
    data/index
    data/intertwingularity
    ml/evals

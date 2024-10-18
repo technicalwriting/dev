@@ -1,2 +1,4 @@
 Sphinx==8.0.2
+matplotlib==3.9.2
+networkx==3.4.1
 sphinx-reredirects==0.1.5
