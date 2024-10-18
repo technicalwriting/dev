@@ -42,6 +42,7 @@ Docs-as-Data (DaD)
   site link to each other and to the outside web more broadly. If a lot of my docs pages link to
   some particular page, then that page is probably important. PageRank Lite, basically, except
   with much more focus on intra-site backlinks.
+* :ref:`embeddings`
 
 .. _ml:
 
@@ -107,6 +108,7 @@ User experience
 
    a11y/skip
    build/bazel
+   data/embeddings
    data/index
    data/intertwingularity
    ml/evals
