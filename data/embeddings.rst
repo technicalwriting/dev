@@ -17,14 +17,19 @@ writing is **embeddings**.
    writers is <b><i>the ability to discover connections between texts at
    previously impossible scales</i></b>.
 
+I know that a lot of my fellow technical writers are worried about
+text generation models automating away our jobs. I think you'll find
+embeddings much more palatable and interesting because there's a lot less risk
+in this regard. Read on to see what I mean!
+
 .. _embeddings-intuition:
 
 -----------------------------------
 Building intuition about embeddings
 -----------------------------------
 
-I suspect that most of my fellow technical writers aren't familiar
-with embeddings, so here's an overview of how you use them and how they work.
+Here's an overview, geared towards technical writers, of how you use
+embeddings and how they work.
 
 .. _embeddings-intuition-i/o:
 
@@ -102,6 +107,15 @@ Does it cost a lot of money?
 ----------------------------
 
 No.
+
+Is it terrible for the environment?
+-----------------------------------
+
+I don't know. Once the model is created (trained), I'm pretty sure that
+generating embeddings is much less computationally intensive than generating
+text. But it also seems to be the case that embedding models are created (trained)
+in similar ways as text generation models, with all the energy usage that implies.
+I'll update this section when I find out more.
 
 What model is best?
 -------------------
@@ -237,6 +251,36 @@ rabbithole.
 :sup:`1` I borrowed this phrase from `Embeddings: What they are why they
 matter <https://simonwillison.net/2023/Oct/23/embeddings/>`_.
 
+Comparing embeddings
+====================
+
+After you've generated your embeddings, you'll need some kind of "database"
+to keep track of what text each embedding is associated to. In the experiment
+I discuss later I got by with just a local JSON file:
+
+.. code-block:: text
+
+   {
+       "authors": {
+           "embedding": […]
+       },
+       "changes/0.1": {
+           "embedding": […]
+       },
+       …
+   }
+
+``authors`` is the name of a page, ``embedding`` is the embedding for that page.
+
+.. _Linear Algebra for Machine Learning and Data Science: https://www.coursera.org/learn/machine-learning-linear-algebra
+.. _NumPy: https://numpy.org/doc/stable/
+.. _scikit-learn: https://scikit-learn.org/stable/
+
+The mechanics of comparing embeddings involves a lot of linear algebra.
+I learned the basics from `Linear Algebra for Machine Learning and Data Science`_.
+The big math and ML libraries like `NumPy`_ and `scikit-learn`_ can do the
+heavy lifting for you (i.e. very little code required on your end).
+
 .. _embeddings-applications:
 
 ------------
@@ -273,6 +317,17 @@ I ran this experiment on the `Sphinx`_ docs. The results were pretty good.
 .. _Related content using embeddings: https://simonwillison.net/2023/Oct/23/embeddings/#related-content-using-embeddings
 
 See `Related content using embeddings`_ for another example of this approach.
+
+Let a thousands embeddings bloom?
+=================================
+
+.. _well-known URIs: https://en.wikipedia.org/wiki/Well-known_URI
+
+As docs site owners, I wonder if we should start providing embeddings for our
+content freely to anyone who wants them, via a REST API or `well-known URIs`_.
+Who knows what kinds of cool stuff our communities can build with this extra type
+of data about our docs? (I have no idea if there are copyright or terms-of-usage
+problems with sharing embeddings.)
 
 -------------
 Parting words
