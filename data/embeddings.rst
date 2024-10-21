@@ -260,7 +260,7 @@ Comparing embeddings
 
 After you've generated your embeddings, you'll need some kind of "database"
 to keep track of what text each embedding is associated to. In the experiment
-I discuss later I got by with just a local JSON file:
+discussed later I got by with just a local JSON file:
 
 .. code-block:: text
 
@@ -274,7 +274,7 @@ I discuss later I got by with just a local JSON file:
        …
    }
 
-``authors`` is the name of a page, ``embedding`` is the embedding for that page.
+``authors`` is the name of a page. ``embedding`` is the embedding for that page.
 
 .. _Linear Algebra for Machine Learning and Data Science: https://www.coursera.org/learn/machine-learning-linear-algebra
 .. _NumPy: https://numpy.org/doc/stable/
@@ -283,7 +283,7 @@ I discuss later I got by with just a local JSON file:
 The mechanics of comparing embeddings involves a lot of linear algebra.
 I learned the basics from `Linear Algebra for Machine Learning and Data Science`_.
 The big math and ML libraries like `NumPy`_ and `scikit-learn`_ can do the
-heavy lifting for you (i.e. very little code required on your end).
+heavy lifting for you (i.e. very little math code on your end).
 
 .. _embeddings-applications:
 
@@ -341,7 +341,7 @@ Three years ago, if you had asked me what 768-dimensional space is,
 I would have told you that it's just some abstract concept that physicists
 and mathematicians need for unfathomable reasons. Embeddings gave me a reason
 to think about this idea more deeply, and actually apply it to my own work.
-I think that's beautiful.
+I think that's pretty cool.
 
 Order-of-magnitude improvements in our ability to maintain our docs
 may very well still be possible after all… perhaps we just need
