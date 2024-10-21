@@ -52,7 +52,9 @@ turns into this:
    [0.0451, -0.0154, 0.0020]
 
 A little strange, right? One input was drastically smaller than the
-other, yet they both produced an array of 3 numbers.\ :sup:`1`
+other, yet they both produced an array of 3 numbers.
+(When you work with real embeddings, the arrays will have
+hundreds or thousands of numbers, not 3. More on that later.)
 
 Here's the first key insight. Because we always get back the same amount of
 numbers no matter how big or small the input text, **we now have a way to
@@ -60,9 +62,6 @@ mathematically compare any two pieces of arbitrary text to each other**.
 
 Huh? How is this? Why would I want to use *math* to compare *docs*?
 And what do those numbers *MEAN*??
-
-:sup:`1` When you work with real embeddings, the arrays will have
-hundreds or thousands of numbers, not 3. More on that later.
 
 .. _embeddings-intuition-api:
 
@@ -221,11 +220,11 @@ always be followed by this quote from John Rupert Firth:
 We started the section by thinking about distance between points on a 2D map.
 It was a nice stepping stone for building intuition but now we need
 to cast it aside, because embeddings operate in hundreds or thousands
-of dimensions. It's impossible for our minds to visualize what "distance" looks
-like in 1000 dimensions.\ :sup:`1` Also, we don't know what each dimension represents,
-hence the section heading "Very weird multi-dimensional space".\ :sup:`2`
+of dimensions. It's (probably) impossible to visualize what "distance" looks
+like in 1000 dimensions. Also, we don't know what each dimension represents,
+hence the section heading "Very weird multi-dimensional space".\ :sup:`1`
 One dimension might represent something close to color, another might
-represent size, etc. ML researchers are still figuring this out.
+represent size, etc. ML researchers are still figuring that out.
 
 .. _The Illustrated Word2vec: https://jalammar.github.io/illustrated-word2vec/
 
@@ -237,17 +236,13 @@ rabbithole.
 :sup:`1` I borrowed this phrase from `Embeddings: What they are why they
 matter <https://simonwillison.net/2023/Oct/23/embeddings/>`_.
 
-:sup:`2` The math obviously works, as evidenced by the
-``king - man + woman ≈ queen`` anecdote. All I'm saying is to be careful about
-leaning too heavily on 2D or 3D analogies.
-
 .. _embeddings-applications:
 
 ------------
 Applications
 ------------
 
-I could tell you exactly how I think we can advance the state of the art
+I could tell you exactly how I think we might advance the state of the art
 in technical writing with embeddings, but where's the fun in that? 
 Let's cover a basic example to put the intuition-building exercise into
 practice and then wrap up this post.
@@ -256,11 +251,10 @@ Related pages
 =============
 
 Some docs sites have a recommendation system that makes you aware of other
-docs that may be relevant for your needs. Basically, they look at whatever
-page you're currently on, find other pages related to this one, and recommend
-that you also check out those other pages. Embeddings provide a new way to
-support this feature, probably at a fraction of the cost of previous
-methods. Here's how it works:
+relevant docs. The system looks at whatever page you're currently on, finds
+other pages related to this one, and then recommends other pages to visit.
+Embeddings provide a new way to support this feature, probably at a fraction
+of the cost of previous methods. Here's how it works:
 
 1. Generate an embedding for each page on your docs site.
 2. For each page, compare its embedding against all other page embeddings
@@ -272,8 +266,8 @@ change when the page's content changes.
 .. _Sphinx: https://www.sphinx-doc.org/en/master/
 
 I ran this experiment on the `Sphinx`_ docs. The results were pretty good.
-See :ref:`embeddings-appendix-implementation` and
-:ref:`embeddings-appendix-results` for details.
+:ref:`embeddings-appendix-implementation` and
+:ref:`embeddings-appendix-results` have the details.
 
 .. _Related content using embeddings: https://simonwillison.net/2023/Oct/23/embeddings/#related-content-using-embeddings
 

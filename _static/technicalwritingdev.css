@@ -101,48 +101,43 @@ pre::-webkit-scrollbar {
 }
 
 table {
-    max-width: 100%;
-    border: none;
+    table-layout: fixed;
     margin: 0;
     padding: 0;
-    overflow-x: clip;
+    border: 0;
+    width: 100%;
 }
 
 tbody {
     margin: 0;
     padding: 0;
-    border: none;
-    overflow-x: clip;
+    border: 0;
 }
 
 thead {
     margin: 0;
     padding: 0;
-    border: none;
-    overflow-x: clip;
+    border: 0;
 }
 
 td {
-    text-align: center;
     margin: 0;
-    padding: 0;
-    border: none;
+    padding: 0.5em;
+    border: 0;
     overflow-x: clip;
 }
 
 th {
-    text-align: center;
     margin: 0;
-    padding: 0 1em;
-    border: none;
+    padding: 0.5em;
+    border: 0;
     overflow-x: clip;
 }
 
 tr {
     margin: 0;
     padding: 0;
-    border: none;
-    overflow-x: clip;
+    border: 0;
 }
 
 .toctree-l1 {
