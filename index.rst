@@ -44,8 +44,10 @@ Docs-as-Data (DaD)
   with much more focus on intra-site backlinks.
 * :ref:`embeddings`. Machine learning (ML) has the potential to
   advance the state of the art in technical writing. No, I'm not talking
-  about Claude Opus, Gemini Pro, LLaMa, etc. The ML technology that might end up
-  having the biggest impact on technical writing is **embeddings**.
+  about text generation models like Claude Opus, Gemini Pro, LLaMa, etc.
+  The ML technology that might end up having the biggest impact on technical
+  writing is **embeddings**. What embeddings offer to technical writers is
+  **the ability to discover connections between texts at previously impossible scales**.
 
 .. _ml:
 

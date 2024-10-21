@@ -244,7 +244,7 @@ Applications
 
 I could tell you exactly how I think we might advance the state of the art
 in technical writing with embeddings, but where's the fun in that? 
-Let's cover a basic example to put the intuition-building exercise into
+Let's cover a basic example to put the intuition-building ideas into
 practice and then wrap up this post.
 
 Related pages
@@ -337,7 +337,8 @@ this extension as it builds the docs.
        }
 
 
-   def init_globals(srcdir):  # Use some globals because this is just an experiment and you can't stop me
+   # Use some globals because this is just an experiment and you can't stop me
+   def init_globals(srcdir):
        global filename
        global srcpath
        global data
@@ -374,8 +375,12 @@ When the build finishes, the embeddings data is stored in ``embeddings.json`` li
 ``authors`` and ``changes/0.1`` are docs. ``embedding`` contains the
 embedding for that doc.
 
+.. _Linear Algebra for Machine Learning and Data Science: https://www.coursera.org/learn/machine-learning-linear-algebra
+
 The last step is to find the closest neighbor for each doc. I.e. to
 find the other page that is considered relevant to the page you're currently on.
+`Linear Algebra for Machine Learning and Data Science`_ gave me a basic idea
+of what this math does.
 
 .. code-block:: py
 
@@ -432,7 +437,7 @@ find the other page that is considered relevant to the page you're currently on.
        print(f'   "{target_cell}", "{neighbor_cell}"')
 
 As you may have noticed, I did not actually implement the recommendation
-UI in this experiment. My main concern was just validating whether
+UI in this experiment. My main goal was to get basic data on whether
 the embeddings approach generates decent recommendations or not.
 
 .. _embeddings-appendix-results:
