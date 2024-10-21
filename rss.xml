@@ -14,11 +14,10 @@
 	    <link>https://technicalwriting.dev/data/embeddings.html</link>
 	    <description>
         Machine learning (ML) has the potential to advance the state of the art
-        in technical writing. No, I'm not talking about text generation models like
-        Claude Opus, Gemini Pro, LLaMa, etc.  The ML technology that might end up
-        having the biggest impact on technical writing is embeddings. What
-        embeddings offer to technical writers is the ability to discover connections
-        between texts at previously impossible scales.
+        in technical writing. No, I'm not talking about text generation models.
+        The ML technology that might end up having the biggest impact on technical
+        writing is embeddings. What embeddings offer to technical writers is the
+        ability to discover connections between texts at previously impossible scales.
       </description>
 	    <pubDate>Mon, 21 Oct 2024 09:09:03 -0700</pubDate>
 	    <guid>https://technicalwriting.dev/data/embeddings.html</guid>

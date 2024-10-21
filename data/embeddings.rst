@@ -6,8 +6,9 @@ Embeddings are underrated
 
 Machine learning (ML) has the potential to advance the state of the
 art in technical writing. No, I'm not talking about text generation models
-like Claude Opus, Gemini Pro, LLaMa, etc. The ML technology that might end up
-having the biggest impact on technical writing is **embeddings**.
+like Claude Opus, Gemini Pro, Meta LLaMa 3, OpenAI GPT-4, etc. The ML
+technology that might end up having the biggest impact on technical
+writing is **embeddings**.
 
 .. raw:: html
 
