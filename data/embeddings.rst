@@ -232,14 +232,18 @@ always be followed by this quote from John Rupert Firth:
 
   You shall know a word by the company it keeps!
 
+.. _Explainable AI: https://en.wikipedia.org/wiki/Explainable_artificial_intelligence
+
 We started the section by thinking about distance between points on a 2D map.
 It was a nice stepping stone for building intuition but now we need
 to cast it aside, because embeddings operate in hundreds or thousands
 of dimensions. It's (probably) impossible to visualize what "distance" looks
 like in 1000 dimensions. Also, we don't know what each dimension represents,
 hence the section heading "Very weird multi-dimensional space".\ :sup:`1`
-One dimension might represent something close to color, another might
-represent size, etc. ML researchers are still figuring that out.
+One dimension might represent something close to color. The
+``king - man + woman ≈ queen`` anecdote suggests that these models contain
+some notion of gender. `Explainable AI`_ is the subfield of ML research dedicated
+to figuring out what these dimensions mean (among other things).
 
 .. _The Illustrated Word2vec: https://jalammar.github.io/illustrated-word2vec/
 
